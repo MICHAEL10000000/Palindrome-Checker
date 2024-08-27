@@ -26,9 +26,9 @@ checkBtn.addEventListener("click", ()=> {
 
         textValue = textArray.join('')
         textValueReverse = textValue.split('').reverse().join('')
-        if (textValue === textValueReverse){
+        if (textValue.toLowerCase() === textValueReverse.toLowerCase()){
             document.getElementById("result").innerHTML = `${initTextValue} is a Palindrome`
-        } else if (textValue !== textValueReverse){
+        } else if (textValue.toLowerCase() !== textValueReverse.toLowerCase()){
             document.getElementById("result").innerHTML = `${initTextValue} is not a Palindrome`
         }
         console.log(textValue)
