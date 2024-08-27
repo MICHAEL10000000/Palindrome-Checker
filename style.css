@@ -58,3 +58,8 @@ button{
     font-weight: bold;
     font-family: sans-serif;
 }
+
+footer{
+    position: fixed;
+    bottom: 2rem;
+}
